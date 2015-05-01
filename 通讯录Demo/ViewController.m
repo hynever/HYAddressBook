@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "HYAddressBook.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [HYAddressBookHandle getAllPeopleWithFinishBlock:^(NSArray *allPeople) {
+        if (allPeople) {
+            for (HYContactModel *model in allPeople) {
+                NSLog(@"firstName:%@",model.firstName);
+                NSLog(@"lastName:%@",model.lastName);
+                NSLog(@"contactID:%ld",model.contactID);
+                NSLog(@"phones:%@",model.phones);
+            }
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

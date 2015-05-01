@@ -14,6 +14,10 @@
 		FB79CDD51ADE06E300B9FE83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB79CDD41ADE06E300B9FE83 /* Images.xcassets */; };
 		FB79CDD81ADE06E300B9FE83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB79CDD61ADE06E300B9FE83 /* LaunchScreen.xib */; };
 		FB79CDE41ADE06E300B9FE83 /* ___DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB79CDE31ADE06E300B9FE83 /* ___DemoTests.m */; };
+		FB79CDF01ADE078000B9FE83 /* HYAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB79CDEF1ADE078000B9FE83 /* HYAddressBookHandle.m */; };
+		FB79CDF21ADE092600B9FE83 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79CDF11ADE092600B9FE83 /* AddressBook.framework */; };
+		FB79CDF41ADE092D00B9FE83 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB79CDF31ADE092D00B9FE83 /* AddressBookUI.framework */; };
+		FBCF6EFE1ADE1AFB005FB9A1 /* HYContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCF6EFD1ADE1AFB005FB9A1 /* HYContactModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB6E1E091ADF6143002578C6 /* HYAddressBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYAddressBook.h; sourceTree = "<group>"; };
 		FB79CDC41ADE06E300B9FE83 /* 通讯录Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "通讯录Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB79CDC81ADE06E300B9FE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB79CDC91ADE06E300B9FE83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,12 @@
 		FB79CDDD1ADE06E300B9FE83 /* 通讯录DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "通讯录DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB79CDE21ADE06E300B9FE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB79CDE31ADE06E300B9FE83 /* ___DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___DemoTests.m"; sourceTree = "<group>"; };
+		FB79CDEE1ADE078000B9FE83 /* HYAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAddressBookHandle.h; sourceTree = "<group>"; };
+		FB79CDEF1ADE078000B9FE83 /* HYAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAddressBookHandle.m; sourceTree = "<group>"; };
+		FB79CDF11ADE092600B9FE83 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FB79CDF31ADE092D00B9FE83 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		FBCF6EFC1ADE1AFB005FB9A1 /* HYContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYContactModel.h; sourceTree = "<group>"; };
+		FBCF6EFD1ADE1AFB005FB9A1 /* HYContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYContactModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB79CDF41ADE092D00B9FE83 /* AddressBookUI.framework in Frameworks */,
+				FB79CDF21ADE092600B9FE83 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,8 @@
 		FB79CDBB1ADE06E300B9FE83 = {
 			isa = PBXGroup;
 			children = (
+				FB79CDF31ADE092D00B9FE83 /* AddressBookUI.framework */,
+				FB79CDF11ADE092600B9FE83 /* AddressBook.framework */,
 				FB79CDC61ADE06E300B9FE83 /* 通讯录Demo */,
 				FB79CDE01ADE06E300B9FE83 /* 通讯录DemoTests */,
 				FB79CDC51ADE06E300B9FE83 /* Products */,
@@ -81,6 +96,7 @@
 		FB79CDC61ADE06E300B9FE83 /* 通讯录Demo */ = {
 			isa = PBXGroup;
 			children = (
+				FB79CDED1ADE070A00B9FE83 /* HYAddressBook */,
 				FB79CDCB1ADE06E300B9FE83 /* AppDelegate.h */,
 				FB79CDCC1ADE06E300B9FE83 /* AppDelegate.m */,
 				FB79CDCE1ADE06E300B9FE83 /* ViewController.h */,
@@ -117,6 +133,18 @@
 				FB79CDE21ADE06E300B9FE83 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB79CDED1ADE070A00B9FE83 /* HYAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				FB6E1E091ADF6143002578C6 /* HYAddressBook.h */,
+				FB79CDEE1ADE078000B9FE83 /* HYAddressBookHandle.h */,
+				FB79CDEF1ADE078000B9FE83 /* HYAddressBookHandle.m */,
+				FBCF6EFC1ADE1AFB005FB9A1 /* HYContactModel.h */,
+				FBCF6EFD1ADE1AFB005FB9A1 /* HYContactModel.m */,
+			);
+			path = HYAddressBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB79CDF01ADE078000B9FE83 /* HYAddressBookHandle.m in Sources */,
+				FBCF6EFE1ADE1AFB005FB9A1 /* HYContactModel.m in Sources */,
 				FB79CDD01ADE06E300B9FE83 /* ViewController.m in Sources */,
 				FB79CDCD1ADE06E300B9FE83 /* AppDelegate.m in Sources */,
 				FB79CDCA1ADE06E300B9FE83 /* main.m in Sources */,
@@ -280,7 +310,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianfeng Cheng (CUN4CK964J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xianfeng Cheng (CUN4CK964J)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,9 +328,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "30019a57-4501-4d85-86ee-b4a2faf8aecb";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -321,7 +353,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianfeng Cheng (CUN4CK964J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xianfeng Cheng (CUN4CK964J)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -332,8 +365,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "30019a57-4501-4d85-86ee-b4a2faf8aecb";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -346,6 +380,7 @@
 				INFOPLIST_FILE = "通讯录Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30019a57-4501-4d85-86ee-b4a2faf8aecb";
 			};
 			name = Debug;
 		};
@@ -356,6 +391,7 @@
 				INFOPLIST_FILE = "通讯录Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30019a57-4501-4d85-86ee-b4a2faf8aecb";
 			};
 			name = Release;
 		};
@@ -412,6 +448,7 @@
 				FB79CDE91ADE06E300B9FE83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB79CDEA1ADE06E300B9FE83 /* Build configuration list for PBXNativeTarget "通讯录DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +457,7 @@
 				FB79CDEC1ADE06E300B9FE83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
